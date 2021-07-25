@@ -15,7 +15,6 @@ List<Post> postFromJson(String str) => List<Post>
 String postToJson(List<Post> data) =>
     json.encode(List<dynamic>.from(data.map((x) => x.toJson())));
 
-
 @freezed
 abstract class Post with _$Post {
   const factory Post({
